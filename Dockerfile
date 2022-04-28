@@ -3,6 +3,8 @@ COPY . /juice-shop
 WORKDIR /juice-shop
 RUN npm i -g typescript ts-node
 RUN npm install --production --unsafe-perm
+# Include the tCell agent
+RUN npm install --production tcell-agent
 RUN npm dedupe
 RUN rm -rf frontend/node_modules
 
