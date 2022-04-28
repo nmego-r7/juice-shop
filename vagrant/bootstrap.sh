@@ -53,7 +53,7 @@ cp /tmp/juice-shop/default.conf /etc/apache2/sites-available/000-default.conf
 echo "At docker run"
 
 # docker run --restart=always -d -p 3000:3000 --name juice-shop bkimminich/juice-shop
-docker run --restart=always -d -p 3000:3000 -e TCELL_AGENT_APP_ID -e TCELL_AGENT_API_KEY -e TCELL_AGENT_API_URL -e TCELL_AGENT_INPUT_URL -e TCELL_AGENT_JS_AGENT_API_URL --name juice-shop bkimminich/juice-shop
+docker run --restart=always -d -p 3000:3000 -e TCELL_AGENT_APP_ID -e TCELL_AGENT_API_KEY -e TCELL_AGENT_API_URL -e TCELL_AGENT_INPUT_URL -e TCELL_AGENT_JS_AGENT_API_URL --name juice-shop nmego-r7/juice-shop
 
 # Download and start docker image with Juice Shop
 # sed -i "li require('tcell_agent');" ../server.ts
