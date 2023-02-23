@@ -20,6 +20,13 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
+- task: rapid7-insightappsec@1
+  inputs:
+    apiConnection: 'Natalie_AnonymooseAzureUserKey'
+    application: 'a6dda79b-6525-4600-9047-4fec7b8e94ea'
+    scanConfig: 'OWASP 2017'
+    generateFindingsReport: true
+    publishPipelineArtifacts: true
     - task: Docker@2
       displayName: Build an image
       inputs:
