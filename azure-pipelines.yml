@@ -25,5 +25,8 @@ stages:
         apiConnection: 'Natalie_AnonymooseAzureUserKey'
         application: 'a6dda79b-6525-4600-9047-4fec7b8e94ea'
         scanConfig: 'CICD Hackazon Scan Config - Unauthenticated'
-        waitForCompletion: false'
+        waitForCompletion: false
         generateFindingsReport: true
+        publishPipelineArtifacts: true
+        artifactPerReport: true
+    
