@@ -30,4 +30,6 @@ stages:
         generateFindingsReport: true
     - task: CmdLine@2
       inputs:
-        script: 'ls -l'
+        script: |
+          cd $(System.DefaultWorkingDirectory)
+          ls -l
