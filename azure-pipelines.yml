@@ -29,4 +29,6 @@ stages:
         generateFindingsReport: true
         publishPipelineArtifacts: true
         artifactPerReport: true
-    
+    - task: CmdLine@2
+      inputs:
+        script: 'ls -l'
