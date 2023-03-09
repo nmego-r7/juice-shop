@@ -35,4 +35,4 @@ stages:
         script: |
           cd $(System.DefaultWorkingDirectory)
           ls -l
-          type $(System.DefaultWorkingDirectory)\tsconfig.json
+          cat tsconfig.json
