@@ -20,16 +20,6 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: rapid7-insightappsec@1
-      inputs:
-        apiConnection: 'Natalie_AnonymooseAzureUserKey'
-        application: 'a6dda79b-6525-4600-9047-4fec7b8e94ea'
-        scanConfig: 'CICD Hackazon Scan Config - Unauthenticated'
-        scanCheckInterval: '1'
-        waitForCompletion: true
-        generateFindingsReport: true
-        publishPipelineArtifacts: true
-        artifactPerReport: true
     - task: CmdLine@2
       inputs:
         script: |
