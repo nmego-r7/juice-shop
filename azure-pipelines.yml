@@ -28,6 +28,8 @@ stages:
         scanCheckInterval: '1'
         waitForCompletion: true
         generateFindingsReport: true
+        hasScanGating: true
+        vulnQuery: 'vulnerability.severity="HIGH"'
         publishPipelineArtifacts: true
         artifactPerReport: true
     - task: CmdLine@2
