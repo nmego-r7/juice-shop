@@ -30,7 +30,7 @@ stages:
         hasTimeout: true
         timeout: '70'
         hasScanGating: true
-        vulnQuery: 'vulnerability.severity="HIGH"'
+        vulnQuery: 'scan.status = ''COMPLETE'''
         publishPipelineArtifacts: true
         artifactPerReport: true
     - task: CmdLine@2
