@@ -28,7 +28,7 @@ stages:
         scanCheckInterval: '1'
         generateFindingsReport: true
         hasTimeout: true
-        timeout: '20'
+        timeout: '70'
         hasScanGating: true
         vulnQuery: 'vulnerability.severity="HIGH"'
         publishPipelineArtifacts: true
