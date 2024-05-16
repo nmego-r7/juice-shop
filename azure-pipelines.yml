@@ -22,13 +22,13 @@ stages:
     steps:
     - task: rapid7-insightappsec@1
       inputs:
-        apiConnection: 'Natalie_AnonymooseAzureOrgKey'
+        apiConnection: 'IAS_Anonymoose_AzureUserKey'
         application: '07ab55b8-c94a-4ee1-8a18-860ce75b2d94'
-        scanConfig: 'CICD Hackazon Scan Config - Unauthenticated'
+        scanConfig: 'CICD Webscantest.com Scan'
         scanCheckInterval: '1'
         generateFindingsReport: true
         hasTimeout: true
-        timeout: '120'
+        timeout: '20'
         hasScanGating: true
         vulnQuery: 'vulnerability.severity="HIGH"'
         publishPipelineArtifacts: true
