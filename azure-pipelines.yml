@@ -22,8 +22,8 @@ stages:
     steps:
     - task: rapid7-insightappsec@1
       inputs:
-        apiConnection: 'Natalie_AnonymooseAzureUserKey'
-        application: '07ab55b8-c94a-4ee1-8a18-860ce75b2d94'
+        apiConnection: 'IAS_Anonymoose_AzureUserKey'
+        application: 'a6dda79b-6525-4600-9047-4fec7b8e94ea'
         scanConfig: 'CICD Hackazon Scan Config - Unauthenticated - DO NOT MODIFY'
         scanCheckInterval: '1'
         generateFindingsReport: true
