@@ -20,19 +20,7 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: rapid7-insightappsec@1
-      inputs:
-        apiConnection: 'IAS_Anonymoose_AzureUserKey'
-        application: '07ab55b8-c94a-4ee1-8a18-860ce75b2d94'
-        scanConfig: 'CICD Webscantest.com Scan'
-        scanCheckInterval: '2'
-        generateFindingsReport: true
-        hasTimeout: true
-        timeout: '45'
-        hasScanGating: true
-        vulnQuery: 'vulnerability.severity="HIGH"'
-        publishPipelineArtifacts: true
-        artifactPerReport: true
+
     - task: CmdLine@2
       inputs:
         script: |
