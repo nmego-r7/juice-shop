@@ -27,3 +27,11 @@ stages:
           cd $(System.DefaultWorkingDirectory)
           ls -l
           cat tsconfig.json
+
+    - task: rapid7-insightappsec@1
+      inputs:
+        apiConnection: 'Sales_InsightAppSec_OrgKey'
+        application: '0a22a7d1-71a1-4226-86a9-44e8926ddf5f'
+        scanConfig: 'CICD'
+        generateFindingsReport: true
+        hasTimeout: false
