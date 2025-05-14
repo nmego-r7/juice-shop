@@ -10,8 +10,8 @@ jobs:
         uses: rapid7/insightappsec-scan-github-actions@v1.3.5
         with:
           region: "us2"
-          api-key: ${{ secrets.IAS_API_KEY }}
-          scan-config-id: "999703e4-a4p0-4ea6-a3sc-53cg789e4fc1"
+          api-key: ${{ secrets.INSIGHTAPPSEC_USER_KEY }}
+          scan-config-id: "dffb07ad-43d3-4029-a8e1-773e575543ce"
           vuln-query: "vulnerability.severity = 'HIGH'"
       - name: Upload findings
         if: always()
